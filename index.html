@@ -13,10 +13,10 @@
             color: #333;
         }
         header {
-            background-color: white; /* Changed background color to white */
+            background-color: black; /* Background color changed to white */
             padding: 20px;
             text-align: center;
-            color: #d4a373; /* Changed text color to match previous header style */
+            color: #d4a373; /* Text color adjusted to match previous header style */
         }
         h1 {
             margin: 0;
@@ -28,11 +28,20 @@
         }
         .message {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 6em;
             color: #555;
+        }
+        .message .part1,
+        .message .part2 {
             opacity: 0;
             animation: fadeIn 3s forwards;
+        }
+        .message .part1 {
+            animation-delay: 0s; /* First part appears immediately */
+        }
+        .message .part2 {
+            animation-delay: 3s; /* Second part appears after 3 seconds */
         }
         @keyframes fadeIn {
             to {
@@ -55,16 +64,16 @@
             animation: fadeIn 1s forwards;
         }
         .gallery img:nth-child(1) {
-            animation-delay: 3s;
+            animation-delay: 6s; /* First image appears after the second message */
         }
         .gallery img:nth-child(2) {
-            animation-delay: 4s;
+            animation-delay: 7s;
         }
         .gallery img:nth-child(3) {
-            animation-delay: 5s;
+            animation-delay: 8s;
         }
         .gallery img:nth-child(4) {
-            animation-delay: 6s;
+            animation-delay: 9s;
         }
     </style>
 </head>
@@ -74,7 +83,8 @@
     </header>
     <div class="container">
         <div class="message">
-            If you want the best, I can give.
+            <div class="part1">If you want the best,</div>
+            <div class="part2">I can give you!</div>
         </div>
         <div class="gallery">
             <img src="./nail_art_1.jpg" alt="Nail Art 1">
