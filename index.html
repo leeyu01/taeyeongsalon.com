@@ -23,23 +23,12 @@
         }
         .container {
             padding: 20px;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-        .gallery img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
         }
         .message {
             text-align: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
             font-size: 1.2em;
             color: #555;
             opacity: 0;
@@ -50,6 +39,39 @@
                 opacity: 1;
             }
         }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards; /* animation duration and fill mode */
+        }
+        .gallery img:nth-child(1) {
+            animation-delay: 3s; /* delay to start after message */
+        }
+        .gallery img:nth-child(2) {
+            animation-delay: 4s;
+        }
+        .gallery img:nth-child(3) {
+            animation-delay: 5s;
+        }
+        .gallery img:nth-child(4) {
+            animation-delay: 6s;
+        }
+        .gallery img:nth-child(5) {
+            animation-delay: 7s;
+        }
+        .gallery img:nth-child(6) {
+            animation-delay: 8s;
+        }
     </style>
 </head>
 <body>
@@ -57,15 +79,14 @@
         <h1>Tae Yeong Nail Salon</h1>
     </header>
     <div class="container">
-        <h2>Our Unique Nail Art</h2>
+        <div class="message">
+            If you want the best, I can give.
+        </div>
         <div class="gallery">
             <img src="./nail_art_1.jpg" alt="Nail Art 1">
             <img src="./nail_art_2.jpg" alt="Nail Art 2">
             <img src="./nail_art_3.jpg" alt="Nail Art 3">
             <img src="./nail_art_4.jpg" alt="Nail Art 4">
-        </div>
-        <div class="message">
-            If you want the best, I can give.
         </div>
     </div>
 </body>
