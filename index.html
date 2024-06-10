@@ -13,10 +13,10 @@
             color: #333;
         }
         header {
-            background-color: #d4a373;
+            background-color: white; /* Changed background color to white */
             padding: 20px;
             text-align: center;
-            color: white;
+            color: #d4a373; /* Changed text color to match previous header style */
         }
         h1 {
             margin: 0;
@@ -29,10 +29,10 @@
         .message {
             text-align: center;
             margin-bottom: 20px;
-            font-size: 6em; /* 5 times bigger than the original size */
+            font-size: 6em;
             color: #555;
             opacity: 0;
-            animation: fadeIn 3s forwards; /* animation duration and fill mode */
+            animation: fadeIn 3s forwards;
         }
         @keyframes fadeIn {
             to {
@@ -52,10 +52,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             opacity: 0;
-            animation: fadeIn 1s forwards; /* animation duration and fill mode */
+            animation: fadeIn 1s forwards;
         }
         .gallery img:nth-child(1) {
-            animation-delay: 3s; /* delay to start after message */
+            animation-delay: 3s;
         }
         .gallery img:nth-child(2) {
             animation-delay: 4s;
