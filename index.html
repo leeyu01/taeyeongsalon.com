@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background-color: black; /* Background color changed to white */
+            background-color: white; /* Background color changed to white */
             padding: 20px;
             text-align: center;
             color: #d4a373; /* Text color adjusted to match previous header style */
@@ -28,7 +28,7 @@
         }
         .message {
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             font-size: 6em;
             color: #555;
         }
@@ -41,7 +41,8 @@
             animation-delay: 0s; /* First part appears immediately */
         }
         .message .part2 {
-            animation-delay: 3s; /* Second part appears after 3 seconds */
+            font-size: 4.8em; /* Reduced to 80% of the original size */
+            animation-delay: 3.3s; /* Second part appears after 3.3 seconds */
         }
         @keyframes fadeIn {
             to {
@@ -64,16 +65,16 @@
             animation: fadeIn 1s forwards;
         }
         .gallery img:nth-child(1) {
-            animation-delay: 6s; /* First image appears after the second message */
+            animation-delay: 6.3s; /* First image appears after the second message */
         }
         .gallery img:nth-child(2) {
-            animation-delay: 7s;
+            animation-delay: 7.3s;
         }
         .gallery img:nth-child(3) {
-            animation-delay: 8s;
+            animation-delay: 8.3s;
         }
         .gallery img:nth-child(4) {
-            animation-delay: 9s;
+            animation-delay: 9.3s;
         }
     </style>
 </head>
@@ -84,7 +85,7 @@
     <div class="container">
         <div class="message">
             <div class="part1">If you want the best,</div>
-            <div class="part2">I can give you!</div>
+            <div class="part2">I can give it to you!</div>
         </div>
         <div class="gallery">
             <img src="./nail_art_1.jpg" alt="Nail Art 1">
