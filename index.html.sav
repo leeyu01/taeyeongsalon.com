@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaeYeong Nail Salon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: white; /* Background color changed to white */
+            padding: 20px;
+            text-align: center;
+            color: #d4a373; /* Text color adjusted to match previous header style */
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .message {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 6em;
+            color: #555;
+        }
+        .message .part1,
+        .message .part2 {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+        }
+        .message .part1 {
+            animation-delay: 0s; /* First part appears immediately */
+        }
+        .message .part2 {
+            animation-delay: 2s; /* Second part appears after 3.3 seconds */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .gallery img:nth-child(1) {
+            animation-delay: 4.5s; /* First image appears after the second message */
+        }
+        .gallery img:nth-child(2) {
+            animation-delay: 4.10s;
+        }
+        .gallery img:nth-child(3) {
+            animation-delay: 4.15s;
+        }
+        .gallery img:nth-child(4) {
+            animation-delay: 4.20s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tae Yeong Nail Salon</h1>
+    </header>
+    <div class="container">
+        <div class="message">
+            <div class="part1">Do you want the best?</div>
+            <div class="part2">I can give it to you!</div>
+        </div>
+        <div class="gallery">
+            <img src="./nail_art_1.jpg" alt="Nail Art 1">
+            <img src="./nail_art_2.jpg" alt="Nail Art 2">
+            <img src="./nail_art_3.jpg" alt="Nail Art 3">
+            <img src="./nail_art_4.jpg" alt="Nail Art 4">
+        </div>
+    </div>
+</body>
+</html>
