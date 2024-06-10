@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tae Yeong Nail Salon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #d4a373;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+            opacity: 0;
+            animation: fadeIn 3s forwards; /* animation duration and fill mode */
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tae Yeong Nail Salon</h1>
+    </header>
+    <div class="container">
+        <h2>Our Unique Nail Art</h2>
+        <div class="gallery">
+            <img src="nail_art_1.jpg" alt="Nail Art 1">
+            <img src="nail_art_2.jpg" alt="Nail Art 2">
+            <img src="nail_art_3.jpg" alt="Nail Art 3">
+            <img src="nail_art_4.jpg" alt="Nail Art 4">
+        </div>
+        <div class="message">
+            If you want the best, I can give.
+        </div>
+    </div>
+</body>
+</html>
